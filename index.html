@@ -21,11 +21,10 @@
     <span id="feedback" role="status">等待玩家加入</span>
   </div>
 </main>
-<main id="claw-picker" hidden>
-  <h1>選擇夾爪</h1>
-  <button type="button" data-claw="long"><strong>長爪</strong><span>範圍大 · 最多 3 件 · 較易滑落</span></button>
-  <button type="button" data-claw="standard"><strong>標準爪</strong><span>範圍與抓力均衡 · 1 件</span></button>
-  <button type="button" data-claw="short"><strong>短爪</strong><span>範圍小 · 1 件 · 抓力強</span></button>
+<main id="claw-picker" aria-label="選擇夾爪" hidden>
+  <button type="button" data-claw="long" aria-label="長爪，抓取範圍較大，最多三件"><img src="./claw-long.png" width="240" height="208" alt=""></button>
+  <button type="button" data-claw="standard" aria-label="標準爪，最多一件"><img src="./claw-standard.png" width="240" height="208" alt=""></button>
+  <button type="button" data-claw="short" aria-label="短爪，抓持力較強，最多一件"><img src="./claw-short.png" width="240" height="208" alt=""></button>
 </main>
 <main id="controller" aria-label="控制板" hidden>
   <p id="connection" class="visually-hidden" role="status">正在連線…</p>
