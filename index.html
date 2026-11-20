@@ -29,11 +29,13 @@
 <main id="controller" aria-label="控制板" hidden>
   <p id="connection" class="visually-hidden" role="status">正在連線…</p>
   <button id="leave" type="button" disabled>離開房間</button>
-  <p id="stick-label">前後左右移動</p>
-  <div id="stick" tabindex="0" role="group" aria-labelledby="stick-label" aria-keyshortcuts="ArrowUp ArrowDown ArrowLeft ArrowRight" inert>
-    <span class="stick-back" aria-hidden="true">▲</span><span class="stick-left" aria-hidden="true">◀</span>
-    <b aria-hidden="true"></b><span class="stick-right" aria-hidden="true">▶</span><span class="stick-front" aria-hidden="true">▼</span>
+  <div class="control-deck">
+    <p id="stick-label" class="visually-hidden">前後左右移動</p>
+    <div id="stick" tabindex="0" role="group" aria-labelledby="stick-label" aria-keyshortcuts="ArrowUp ArrowDown ArrowLeft ArrowRight" inert>
+      <span class="stick-back" aria-hidden="true">▲</span><span class="stick-left" aria-hidden="true">◀</span>
+      <b aria-hidden="true"></b><span class="stick-right" aria-hidden="true">▶</span><span class="stick-front" aria-hidden="true">▼</span>
+    </div>
+    <button id="grab" type="button" disabled>夾取</button>
   </div>
-  <button id="grab" type="button" disabled>夾取</button>
 </main>
 </body></html>
