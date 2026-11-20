@@ -27,3 +27,9 @@ button{font:inherit;font-weight:800;cursor:pointer;border-radius:12px;min-height
 #leave{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);background:#30263f;color:#f6edff;padding:0 17px}
 button:disabled,#stick[inert]{opacity:.55;cursor:default}
 :focus-visible{outline:3px solid #fff;outline-offset:3px}
+#claw-picker{width:min(calc(100% - 36px),380px);min-height:100dvh;margin:auto;display:grid;align-content:center;gap:12px;padding:24px 0}
+#claw-picker h1{font-size:1.65rem;margin:0 0 6px}
+#claw-picker button{display:grid;gap:5px;text-align:left;padding:15px 18px;border:1px solid #514462;background:#211a2f;color:#f8f5ff}
+#claw-picker button:hover,#claw-picker button:focus-visible{border-color:var(--accent)}
+#claw-picker strong{color:var(--accent);font-size:1.08rem}
+#claw-picker span{color:var(--muted);font-size:.875rem;font-weight:400}
