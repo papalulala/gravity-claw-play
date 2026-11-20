@@ -9,6 +9,13 @@ body{margin:0;background:radial-gradient(ellipse at 45% 0%,#241a37 0%,var(--bg) 
 #claw-scores{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .claw-score{position:absolute;transform:translate(13px,-50%);padding:3px 7px;border-radius:8px;background:#17151ee8;color:var(--player-color);font-size:clamp(.78rem,2vw,1rem);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.2}
 .claw-score[data-side=left]{transform:translate(calc(-100% - 13px),-50%)}
+.claw-score[data-boosted]{color:#ffe080;box-shadow:0 0 12px #ffb51a}
+.claw-score>span{display:block}
+.claw-countdown{font-size:.8em;color:#fff}
+.claw-burning::before{content:'';position:absolute;bottom:-25px;right:100%;width:68px;height:94px;background:radial-gradient(ellipse at 50% 82%,#fff7a3 5%,#ffbe31 29%,#ff5c16 50%,transparent 73%);clip-path:polygon(5% 100%,0 62%,20% 75%,26% 34%,42% 58%,57% 0,68% 55%,84% 34%,94% 71%,100% 100%);filter:drop-shadow(0 0 10px #ff5722);pointer-events:none;animation:claw-fire .24s ease-in-out infinite alternate}
+.claw-burning[data-side=left]::before{right:auto;left:100%}
+@keyframes claw-fire{from{transform:scale(.83,.9) rotate(-5deg);opacity:.77}to{transform:scale(1.14,1.13) rotate(5deg);opacity:1}}
+@media(prefers-reduced-motion:reduce){.claw-burning::before{animation:none}}
 #join-link{position:fixed;left:47.23%;bottom:1.12dvh;transform:translateX(-50%)}
 #qr{display:block;width:clamp(66px,6.8vw,123px);height:auto;aspect-ratio:1;image-rendering:pixelated}
 .visually-hidden{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
